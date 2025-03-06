@@ -1,10 +1,11 @@
 import React from "react";
-import logo from "../assets/logo-colored.png";
+// import logo from "../assets/logo-colored.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
         <nav className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Logo Section */}
           <a href="/" className="mt-3">
-            <img src={logo} alt="Company Logo" className="w-24 md:w-32" />
+            <Image src="/logo-colored.png" alt="Company Logo" width={128} height={96} className="w-24 md:w-32" />
           </a>
 
           {/* Search Bar Section */}
@@ -40,12 +41,12 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Profile & Cart Section */}
+           {/*Profile & Cart Section */}
           <ul className="flex justify-center gap-4 md:gap-6 mt-4 text-gray-400">
             <li className="hover:text-[#0D6EFD] cursor-pointer">
-              <FontAwesomeIcon icon={faUser} aria-label="Profile" />
-              <br />
-              <span className="text-sm">Profile</span>
+             <FontAwesomeIcon icon={faUser} aria-label="Profile" />
+             <br />
+           <span className="text-sm">Profile</span>
             </li>
             <li className="hover:text-[#0D6EFD] cursor-pointer">
               <FontAwesomeIcon icon={faMessage} aria-label="Message" />
