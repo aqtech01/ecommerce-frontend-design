@@ -14,6 +14,7 @@ const Products = () => {
       <HomeAndOutdoor />
       <ElectronicAndGadget />
       <Contact />
+      <RecommendedItems />
     </>
   );
 };
@@ -121,7 +122,7 @@ const Section = (props) => {
               >
                 <Image
                   src={product}
-                  alt={product.name}
+                  alt={product}
                   className="w-20 h-20 object-contain mb-2"
                 />
                 <p className="text-sm font-medium text-gray-900 mb-1">
@@ -153,3 +154,10 @@ const ElectronicAndGadget = () => (
     price={[1, 2, 3, 4, 5, 6, 7, 8]}
   />
 );
+const RecommendedItems = () => {
+  return (
+    <>
+      <div class="grid grid-cols-2 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"></div>
+    </>
+  );
+};
