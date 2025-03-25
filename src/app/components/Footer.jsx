@@ -1,9 +1,10 @@
-import { header } from "../../public/assets";
+import { header } from "../../../public/assets";
 import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaInstagramSquare } from "react-icons/fa";
 import { US } from "country-flag-icons/react/3x2";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -38,7 +39,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
             {/* Company Info */}
             <div className="space-y-4">
-              <img src={header.logo} alt="logo" className="h-8" />
+              <Image src={header.logo} alt="logo" className="h-8" />
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Quisquam, quos.
@@ -151,8 +152,8 @@ const GetApp = () => (
   <div className="space-y-4">
     <h3 className="font-bold text-lg text-gray-800">Get the App</h3>
     <div className="space-y-2">
-      <img src={header.appleStore} className="w-32" alt="App Store" />
-      <img src={header.googleStore} className="w-32" alt="Google Play" />
+      <Image src={header.appleStore} className="w-32" alt="App Store" />
+      <Image src={header.googleStore} className="w-32" alt="Google Play" />
     </div>
   </div>
 );

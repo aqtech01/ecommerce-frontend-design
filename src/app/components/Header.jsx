@@ -1,4 +1,4 @@
-import { header } from "../../public/assets";
+import { header } from "../../../public/assets"
 import { FaUserAlt } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
 import { FaHeart } from "react-icons/fa";
@@ -6,12 +6,13 @@ import { FaShoppingCart } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { US } from "country-flag-icons/react/3x2";
+import Image from "next/image";
 const Header = () => {
   return (
     <>
       <header className="bg-white mx-auto max-w-7xl p-4">
         <nav className="flex justify-between items-center">
-          <img src={header.logo} alt="logo" />
+          <Image src={header.logo} alt="logo"  />
           <div className="flex items-center">
             <input
               type="text"
